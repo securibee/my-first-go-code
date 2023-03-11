@@ -8,7 +8,7 @@ import (
 func Hello(name string) string {
   if name == "" {
     name = "World"
-  } else if name == "os" {
+  } else if name == "host" {
     name, _ = os.Hostname()
   }
   return "Hello " + name

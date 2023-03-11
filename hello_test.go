@@ -25,7 +25,7 @@ func TestHello(t *testing.T) {
 
   t.Run("saying hello to host", func(t *testing.T) {
     host, _ := os.Hostname()
-    got := Hello("os")
+    got := Hello("host")
     want := "Hello " + host
 
     if got != want {
