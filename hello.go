@@ -8,11 +8,11 @@ import (
 func Hello(name string) string {
   if name == "" {
     name = "World"
+  } else if name == "os" {
+    name, _ = os.Hostname()
   }
   return "Hello " + name
 }
-
-//str, _ := os.Hostname()
 
 func main() {
   argument := ""
